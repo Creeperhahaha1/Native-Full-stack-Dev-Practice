@@ -1,0 +1,84 @@
+/* index.css */
+div#pdf {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  max-width:360px;
+  max-height:320px;
+  border: 5px solid royalblue;
+  overflow:hidden;
+}
+
+div#pdf div {
+  background-color: hsla(250, 50%, 50%, 25%); 
+  border: 2px solid blueviolet;
+  width:120px;
+  height:60px;
+  box-sizing: border-box;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  border-radius: 8px;
+  position:relative;
+  right:0px;
+  transition: right 0.3s ease;
+}
+
+div#pdf div:hover {
+  border-radius: 12px;
+  background-color: hsla(250, 50%, 50%, 50%); 
+}
+
+div#pdf div a {
+  display:flex;
+  justify-content: center; 
+  align-items: center; 
+  font-size:24px;
+  width:120px;
+  height:60px;
+  text-decoration:none;
+  color: #123456;
+}
+
+#main {
+  display: flex; 
+  flex-direction: row; 
+}
+
+#main div button {
+  width:60px;
+  height:60px;
+  opacity: 1;
+}
+
+#main div#next button img {
+  max-width: 75%;
+}
+
+#main div#back button img {
+  transform: scaleX(-1);
+  max-width: 75%;
+}
+
+#main div#begin button img {
+  transform: scaleX(-1);
+  max-width: 120%;
+}
+
+#main div#end button img {
+  max-width: 120%;
+}
+
+#main div#page {
+  font-size: 30px;
+}
+
+.nav_panel{
+  width: 60px; 
+  height: 60px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
+  box-sizing: border-box;
+}
