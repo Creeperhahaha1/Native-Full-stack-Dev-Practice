@@ -14,7 +14,6 @@ export default class {
       xhr.send(); 
       xhr.onload = () => { 
         this.msg = JSON.parse(xhr.responseText).msg;
-        console.log(this.msg);
         resolve();
       };
       xhr.onerror = () => { 
